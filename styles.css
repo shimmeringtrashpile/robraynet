@@ -58,6 +58,10 @@ ul {
   line-height: 1.3;
 }
 
+.teaser {
+  color: #989898
+}
+
 .tagline {
   color: gray;
 }
@@ -71,7 +75,7 @@ ul {
   /* create the purple hover effect and black padding */
   margin: 0 0 10px 0;
   background-color: black;
-  line-height: 1.8em;
+  line-height: 2em;
   padding: 4px 6px 4px 6px;
   text-decoration: none;
   transition: 0.3s;
