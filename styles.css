@@ -12,11 +12,36 @@
   box-sizing: border-box;
 }
 
+
 body {
   background-color: #262626;
+}
+
+.page {
   width: 1080px;
-  display: grid;
   margin: 0 auto
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30px 30px;
+  grid-template-areas:
+    "header header header"
+    "intro intro intro"
+    "art-header art-header art-header"
+    "project project project"
+    "project project project"
+    "project project project"
+    "podcast-header podcast-header podcast-header"
+    "artfab-header artfab-header artfab-header"
+    "nav-block social-block .";
+  row-gap: 64px;
+  column-gap: 64px;
+}
+
+.intro {
+  grid-area: intro;
 }
 
 /* unvisited link */
@@ -48,7 +73,8 @@ h1 {
 
 h2 {
   color: #f2f2f2;
-  margin-block-end: 0;
+  margin-block-end: 8px;
+
 }
 
 h3 {
@@ -68,6 +94,7 @@ ul {
 }
 
 .header {
+  grid-area: header;
   margin-top: 30px;
 }
 
@@ -84,7 +111,8 @@ h1 a:link {
 }
 
 .teaser {
-  color: #989898
+  color: #989898;
+  margin-top: .3em;
 }
 
 .tagline {
@@ -112,24 +140,28 @@ h1 a:link {
   color: white;
 }
 
-.projects {
+.art-header {
+  grid-area: art-header;
   border: 1px solid white;
   justify-content: space-around;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 10px;
-  column-gap: 10px;
+.podcast-header {
+  grid-area: podcast-header;
+  border: 1px solid white;
+  justify-content: space-around;
+}
+
+.artfab-header {
+  grid-area: artfab-header;
+  border: 1px solid white;
+  justify-content: space-around;
 }
 
 .project {
   border: 1px solid red;
-  width: 320px;
-  height: 540px;
-  padding: 10px;
-  margin: 10px;
+  width: 300px;
+  height: 520px;
   align-items: stretch;
 }
 
@@ -137,8 +169,15 @@ h1 a:link {
   border: 1px solid purple;
 }
 
+.nav-block {
+    grid-area: nav-block;
+}
 
-.social ul {
+.social-block {
+  grid-area: social-block;
+}
+
+.social-block ul {
   padding: 0;
   list-style-type: none; 
 }
@@ -152,7 +191,6 @@ h1 a:link {
   width: 90%;
   border: 1px solid white;
 }
-
 
 .blog-post {
 
