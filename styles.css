@@ -18,14 +18,13 @@ body {
 }
 
 .page {
-  width: 1080px;
+  width: 1090px;
   margin: 0 auto
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 30px 30px 60px;
   grid-template-areas:
     "header header header"
     "intro intro intro"
@@ -36,8 +35,8 @@ body {
     "podcast-header podcast-header podcast-header"
     "artfab-header artfab-header artfab-header"
     "nav-block social-block social-block";
-  row-gap: 64px;
-  column-gap: 64px;
+  row-gap: auto;
+  column-gap: 60px;
 }
 
 .intro {
@@ -111,6 +110,7 @@ h1 a:link {
 
 .teaser {
   color: #989898;
+  margin-top: 4px;
 }
 
 .tagline {
@@ -141,7 +141,7 @@ h1 a:link {
 .art-header {
   grid-area: art-header;
   border: 1px solid white;
-  justify-content: space-around;
+  height: auto;
 }
 
 .podcast-header {
@@ -158,13 +158,14 @@ h1 a:link {
 
 .project {
   border: 1px solid red;
-  width: 300px;
-  height: 520px;
+  width: 320px;
+  height: 540px;
   align-items: stretch;
 }
 
 .project-header {
   border: 1px solid purple;
+  height: 48px;
 }
 
 .nav-block {
