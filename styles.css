@@ -110,7 +110,7 @@ h1 a:link {
 
 .teaser {
   color: #989898;
-  margin-top: 4px;
+  margin: 4px 0px;
 }
 
 .tagline {
@@ -159,7 +159,7 @@ h1 a:link {
 .project {
   border: 1px solid red;
   width: 320px;
-  height: 590px;
+  height: 550px;
   align-items: stretch;
 }
 
