@@ -21,17 +21,20 @@ body {
 
 /* unvisited link */
 a:link {
-  color: #f2f2f2;
+  color: #8c36d6;
+  text-decoration-line: none;
+
 }
 
 /* visited link */
 a:visited {
-  color: #e0dfdf;
+  color: #8c36d6;
+  text-decoration-line: none;
 }
 
 /* mouse over link */
 a:hover {
-  color: white;
+  text-decoration-line: underline;
 }
 
 /* selected link */
@@ -66,7 +69,6 @@ ul {
 
 .header {
   margin-top: 30px;
-
 }
 
 .navigation a:link {
@@ -107,6 +109,7 @@ h1 a:link {
 
 .tag a:hover {
   background-color: #8c36d6;
+  color: white;
 }
 
 .projects {
@@ -132,6 +135,16 @@ h1 a:link {
 
 .project-header {
   border: 1px solid purple;
+}
+
+
+.social ul {
+  padding: 0;
+  list-style-type: none; 
+}
+
+.social a:link {
+  text-decoration-line: none;
 }
 
 .blog-posts {
