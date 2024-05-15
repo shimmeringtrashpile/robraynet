@@ -25,7 +25,7 @@ body {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 30px 30px;
+  grid-template-rows: 30px 30px 60px;
   grid-template-areas:
     "header header header"
     "intro intro intro"
@@ -35,7 +35,7 @@ body {
     "project project project"
     "podcast-header podcast-header podcast-header"
     "artfab-header artfab-header artfab-header"
-    "nav-block social-block .";
+    "nav-block social-block social-block";
   row-gap: 64px;
   column-gap: 64px;
 }
@@ -73,8 +73,7 @@ h1 {
 
 h2 {
   color: #f2f2f2;
-  margin-block-end: 8px;
-
+  margin-bottom: 10px ;
 }
 
 h3 {
@@ -112,7 +111,6 @@ h1 a:link {
 
 .teaser {
   color: #989898;
-  margin-top: .3em;
 }
 
 .tagline {
@@ -171,6 +169,11 @@ h1 a:link {
 
 .nav-block {
     grid-area: nav-block;
+}
+
+.nav-block ul {
+  padding: 0;
+  list-style-type: none; 
 }
 
 .social-block {
