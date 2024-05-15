@@ -12,32 +12,101 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-color: #262626;
 }
 
-.page {
-  width: 1090px;
-  margin: 0 auto
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+  .page {
+    background: #bada55;
+    width: 400px;
+    margin: 0 auto
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "intro"
+      "art-header"
+      "project"
+      "podcast-header"
+      "artfab-header"
+      "nav-block" 
+      "social-block";
+    row-gap: auto;
+    column-gap: 60px;
+  }
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .page {
+    background: fuchsia;
+    width: 720px;
+    margin: 0 auto
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header header"
+      "intro intro"
+      "art-header art-header"
+      "project project"
+      "project project"
+      "project project"
+      "project project"
+      "podcast-header podcast-header"
+      "artfab-header artfab-header"
+      "nav-block nav-block" 
+      "social-block social-block";
+    row-gap: auto;
+    column-gap: 60px;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .page {
+    background: burlywood;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  .page {
+    width: 1090px;
+    margin: 0 auto
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "intro intro intro"
+      "art-header art-header art-header"
+      "project project project"
+      "project project project"
+      "project project project"
+      "podcast-header podcast-header podcast-header"
+      "artfab-header artfab-header artfab-header"
+      "nav-block social-block social-block";
+    row-gap: auto;
+    column-gap: 60px;
+  }
+
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "header header header"
-    "intro intro intro"
-    "art-header art-header art-header"
-    "project project project"
-    "project project project"
-    "project project project"
-    "podcast-header podcast-header podcast-header"
-    "artfab-header artfab-header artfab-header"
-    "nav-block social-block social-block";
-  row-gap: auto;
-  column-gap: 60px;
-}
 
 .intro {
   grid-area: intro;
@@ -160,12 +229,20 @@ h1 a:link {
   border: 1px solid red;
   width: 320px;
   height: 550px;
-  align-items: stretch;
+}
+
+.project-thumbnail {
+  height: 320px;
 }
 
 .project-header {
-  border: 1px solid purple;
+  border: 1px solid green;
   height: 48px;
+}
+
+.project-header a {
+  color: white;
+  text-decoration-line: none;
 }
 
 .nav-block {
