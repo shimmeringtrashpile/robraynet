@@ -59,6 +59,10 @@ body {
     width: 320px;
     height: 560px;
   }
+
+  .nav-item {
+    font-size: .9em;
+  }
 }
 
 
@@ -136,6 +140,10 @@ body {
     background-color: darkcyan;
     width: 320px;
     height: 540px;
+  }
+
+  .nav-item {
+    font-size: .9em;
   }
 }
 
@@ -404,4 +412,8 @@ h1 a:link {
 }
 
 .blog-post {
+}
+
+.nav-item {
+  line-height: 1.4;
 }
