@@ -22,7 +22,7 @@ body {
 @media only screen and (max-width: 600px) {
   .page {
     background: #bada55;
-    max-width: 350px;
+    max-width: 320px;
     margin: auto;
 
   }
@@ -31,14 +31,33 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-      "header"
-      "intro"
-      "art-projects-header"
-      "art-projects"
-      "podcast-projects-header"
-      "fabrication-projects-header"
-      "nav-block"
-      "social-block";
+    "header"
+    "intro"
+    "art-projects-header"
+    "project1"
+    "project2"
+    "project3" 
+    "project4" 
+    "project5" 
+    "project6"
+    "project7"
+    "podcast-projects-header"
+    "fabrication-projects-header"
+    "nav-block"
+    "social-block";
+    /* row-gap: auto; */
+    /* column-gap: 20px; */
+  }
+
+  .project-thumbnail {
+    height: 320px;
+  }
+
+  .project {
+    grid-area: project;
+    background-color: darkcyan;
+    width: 320px;
+    height: 560px;
   }
 }
 
@@ -47,23 +66,37 @@ body {
 @media only screen and (min-width: 600px) {
   .page {
     background: darkorange;
-    max-width: 540px;
+    max-width: 620px;
     margin: auto;
   }
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "header header"
     "intro intro"
     "art-projects-header art-projects-header"
-    "art-projects art-projects"
+    "project1 project2"
+    "project3 project4" 
+    "project5 project6"
+    "project7 . "
     "podcast-projects-header podcast-projects-header"
     "fabrication-projects-header fabrication-projects-header"
-    "social-block social-block";
-    row-gap: auto;
-    column-gap: 60px;
+    "nav-block social-block";
+    /* row-gap: auto; */
+    column-gap: 20px;
+  }
+
+  .project-thumbnail {
+    height: 300px;
+  }
+
+  .project {
+    grid-area: project;
+    background-color: darkcyan;
+    width: 300px;
+    height: 540px;
   }
 }
 
@@ -72,7 +105,7 @@ body {
 @media only screen and (min-width: 768px) {
   .page {
     background: darkolivegreen;
-    max-width: 728px;
+    max-width: 672px;
     margin: auto;
   }
 
@@ -80,15 +113,29 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "header header"
-      "intro intro"
-      "art-projects-header art-projects-header"
-      "art-projects art-projects"
-      "podcast-projects-header podcast-projects-header"
-      "fabrication-projects-header fabrication-projects-header"
-      "nav-block social-block";
+    "header header"
+    "intro intro"
+    "art-projects-header art-projects-header"
+    "project1 project2"
+    "project3 project4" 
+    "project5 project6"
+    "project7 . "
+    "podcast-projects-header podcast-projects-header"
+    "fabrication-projects-header fabrication-projects-header"
+    "nav-block social-block";
     /* row-gap: auto; */
-    column-gap: 60px;
+    column-gap: 32px;
+  }
+
+  .project-thumbnail {
+    height: 320px;
+  }
+
+  .project {
+    grid-area: project;
+    background-color: darkcyan;
+    width: 320px;
+    height: 540px;
   }
 }
 
@@ -98,22 +145,35 @@ body {
   .page {
     max-width: 960px;
     margin: auto;
-    background: #313030;
+    background: darkmagenta;
   }
 
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-      "header header header"
-      "intro intro intro"
-      "art-projects-header art-projects-header art-projects-header"
-      "art-projects art-projects art-projects"
-      "podcast-projects-header podcast-projects-header podcast-projects-header"
-      "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
-      "nav-block social-block social-block";
+    "header header header"
+    "intro intro intro"
+    "art-projects-header art-projects-header art-projects-header"
+    "project1 project2 project3"
+    "project4 project5 project6"
+    "project7 . ."
+    "podcast-projects-header podcast-projects-header podcast-projects-header"
+    "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
+    "nav-block social-block social-block";
     /* row-gap: auto; */
-    column-gap: 60px;
+    column-gap: 32px;
+  }
+
+  .project-thumbnail {
+    height: 298px;
+  }
+
+  .project {
+    grid-area: project;
+    background-color: darkcyan;
+    width: 298px;
+    height: 520px;
   }
 }
 
@@ -121,7 +181,7 @@ body {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .page {
-    width: 1080px;
+    width: 1280px;
     margin: 0 auto;
     background: darkslateblue;
   }
@@ -132,12 +192,25 @@ body {
       "header header header"
       "intro intro intro"
       "art-projects-header art-projects-header art-projects-header"
-      "art-projects art-projects art-projects"
+      "project1 project2 project3"
+      "project4 project5 project6"
+      "project7 . ."
       "podcast-projects-header podcast-projects-header podcast-projects-header"
       "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
       "nav-block social-block social-block";
-    /* row-gap: auto; */
+    row-gap: auto;
     column-gap: 60px;
+  }
+
+  .project-thumbnail {
+    height: 320px;
+  }
+
+  .project {
+    grid-area: project;
+    background-color: darkcyan;
+    width: 320px;
+    height: 550px;
   }
 }
 
@@ -259,20 +332,37 @@ h1 a:link {
   grid-area: fabrication-projects-header;
 }
 
-.art-projects {
+/* .art-projects {
   grid-area: art-projects;
   background-color: lightskyblue;
+} */
+
+.project1 {
+  grid-area: project1;
 }
 
-.project {
-  grid-area: project;
-  background-color: darkcyan;
-  width: 320px;
-  height: 550px;
+.project2 {
+  grid-area: project2;
 }
 
-.project-thumbnail {
-  height: 320px;
+.project3 {
+  grid-area: project3;
+}
+
+.project4 {
+  grid-area: project4;
+}
+
+.project5 {
+  grid-area: project5;
+}
+
+.project6 {
+  grid-area: project6;
+}
+
+.project7 {
+  grid-area: project7;
 }
 
 .project-header {
