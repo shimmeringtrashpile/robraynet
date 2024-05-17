@@ -41,6 +41,13 @@ body {
     "project5" 
     "project6"
     "project7"
+    "project8"
+    "project9"
+    "project10" 
+    "project11" 
+    "project12" 
+    "project13"
+    "project14"
     "podcast-projects-header"
     "fabrication-projects-header"
     "nav-block"
@@ -84,7 +91,10 @@ body {
     "project1 project2"
     "project3 project4" 
     "project5 project6"
-    "project7 . "
+    "project7 project8"
+    "project9 project10"
+    "project11 project12" 
+    "project13 project14"
     "podcast-projects-header podcast-projects-header"
     "fabrication-projects-header fabrication-projects-header"
     "nav-block social-block";
@@ -123,7 +133,10 @@ body {
     "project1 project2"
     "project3 project4" 
     "project5 project6"
-    "project7 . "
+    "project7 project8"
+    "project9 project10"
+    "project11 project12" 
+    "project13 project14"
     "podcast-projects-header podcast-projects-header"
     "fabrication-projects-header fabrication-projects-header"
     "nav-block social-block";
@@ -165,7 +178,9 @@ body {
     "art-projects-header art-projects-header art-projects-header"
     "project1 project2 project3"
     "project4 project5 project6"
-    "project7 . ."
+    "project7 project8 project9"
+    "project10 project11 project12" 
+    "project13 project14 ."
     "podcast-projects-header podcast-projects-header podcast-projects-header"
     "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
     "nav-block social-block social-block";
@@ -202,7 +217,9 @@ body {
       "art-projects-header art-projects-header art-projects-header"
       "project1 project2 project3"
       "project4 project5 project6"
-      "project7 . ."
+      "project7 project8 project9"
+      "project10 project11 project12" 
+      "project13 project14 ."
       "podcast-projects-header podcast-projects-header podcast-projects-header"
       "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
       "nav-block social-block social-block";
@@ -371,6 +388,34 @@ h1 a:link {
 
 .project7 {
   grid-area: project7;
+}
+
+.project8 {
+  grid-area: project8;
+}
+
+.project9 {
+  grid-area: project9;
+}
+
+.project10 {
+  grid-area: project10;
+}
+
+.project11 {
+  grid-area: project11;
+}
+
+.project12 {
+  grid-area: project12;
+}
+
+.project13 {
+  grid-area: project13;
+}
+
+.project14 {
+  grid-area: project14;
 }
 
 .project-header {
