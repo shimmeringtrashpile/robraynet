@@ -34,20 +34,20 @@ body {
     "header"
     "intro"
     "art-projects-header"
-    "project1"
-    "project2"
-    "project3" 
-    "project4" 
-    "project5" 
-    "project6"
-    "project7"
-    "project8"
-    "project9"
-    "project10" 
-    "project11" 
-    "project12" 
-    "project13"
-    "project14"
+    "art-project1"
+    "art-project2"
+    "art-project3" 
+    "art-project4" 
+    "art-project5" 
+    "art-project6"
+    "art-project7"
+    "art-project8"
+    "art-project9"
+    "art-project10" 
+    "art-project11" 
+    "art-project12" 
+    "art-project13"
+    "art-project14"
     "podcast-projects-header"
     "fabrication-projects-header"
     "nav-block"
@@ -61,7 +61,6 @@ body {
   }
 
   .project {
-    grid-area: project;
     background-color: darkcyan;
     width: 320px;
     height: 560px;
@@ -88,13 +87,13 @@ body {
     "header header"
     "intro intro"
     "art-projects-header art-projects-header"
-    "project1 project2"
-    "project3 project4" 
-    "project5 project6"
-    "project7 project8"
-    "project9 project10"
-    "project11 project12" 
-    "project13 project14"
+    "art-project1 art-project2"
+    "art-project3 art-project4" 
+    "art-project5 art-project6"
+    "art-project7 art-project8"
+    "art-project9 art-project10"
+    "art-project11 art-project12" 
+    "art-project13 art-project14"
     "podcast-projects-header podcast-projects-header"
     "fabrication-projects-header fabrication-projects-header"
     "nav-block social-block";
@@ -130,13 +129,13 @@ body {
     "header header"
     "intro intro"
     "art-projects-header art-projects-header"
-    "project1 project2"
-    "project3 project4" 
-    "project5 project6"
-    "project7 project8"
-    "project9 project10"
-    "project11 project12" 
-    "project13 project14"
+    "art-project1 art-project2"
+    "art-project3 art-project4" 
+    "art-project5 art-project6"
+    "art-project7 art-project8"
+    "art-project9 art-project10"
+    "art-project11 art-project12" 
+    "art-project13 art-project14"
     "podcast-projects-header podcast-projects-header"
     "fabrication-projects-header fabrication-projects-header"
     "nav-block social-block";
@@ -176,11 +175,11 @@ body {
     "header header header"
     "intro intro intro"
     "art-projects-header art-projects-header art-projects-header"
-    "project1 project2 project3"
-    "project4 project5 project6"
-    "project7 project8 project9"
-    "project10 project11 project12" 
-    "project13 project14 ."
+    "art-project1 art-project2 art-project3"
+    "art-project4 art-project5 art-project6"
+    "art-project7 art-project8 art-project9"
+    "art-project10 art-project11 art-project12" 
+    "art-project13 art-project14 ."
     "podcast-projects-header podcast-projects-header podcast-projects-header"
     "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
     "nav-block social-block social-block";
@@ -215,11 +214,11 @@ body {
       "header header header"
       "intro intro intro"
       "art-projects-header art-projects-header art-projects-header"
-      "project1 project2 project3"
-      "project4 project5 project6"
-      "project7 project8 project9"
-      "project10 project11 project12" 
-      "project13 project14 ."
+      "art-project1 art-project2 art-project3"
+      "art-project4 art-project5 art-project6"
+      "art-project7 art-project8 art-project9"
+      "art-project10 art-project11 art-project12" 
+      "art-project13 art-project14 ."
       "podcast-projects-header podcast-projects-header podcast-projects-header"
       "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
       "nav-block social-block social-block";
@@ -362,60 +361,60 @@ h1 a:link {
   background-color: lightskyblue;
 } */
 
-.project1 {
-  grid-area: project1;
+.art-project1 {
+  grid-area: art-project1;
 }
 
-.project2 {
-  grid-area: project2;
+.art-project2 {
+  grid-area: art-project2;
 }
 
-.project3 {
-  grid-area: project3;
+.art-project3 {
+  grid-area: art-project3;
 }
 
-.project4 {
-  grid-area: project4;
+.art-project4 {
+  grid-area: art-project4;
 }
 
-.project5 {
-  grid-area: project5;
+.art-project5 {
+  grid-area: art-project5;
 }
 
-.project6 {
-  grid-area: project6;
+.art-project6 {
+  grid-area: art-project6;
 }
 
-.project7 {
-  grid-area: project7;
+.art-project7 {
+  grid-area: art-project7;
 }
 
-.project8 {
-  grid-area: project8;
+.art-project8 {
+  grid-area: art-project8;
 }
 
-.project9 {
-  grid-area: project9;
+.art-project9 {
+  grid-area: art-project9;
 }
 
-.project10 {
-  grid-area: project10;
+.art-project10 {
+  grid-area: art-project10;
 }
 
-.project11 {
-  grid-area: project11;
+.art-project11 {
+  grid-area: art-project11;
 }
 
-.project12 {
-  grid-area: project12;
+.art-project12 {
+  grid-area: art-project12;
 }
 
-.project13 {
-  grid-area: project13;
+.art-project13 {
+  grid-area: art-project13;
 }
 
-.project14 {
-  grid-area: project14;
+.art-project14 {
+  grid-area: art-project14;
 }
 
 .project-header {
