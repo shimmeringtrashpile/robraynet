@@ -14,16 +14,17 @@
 
 body {
   background-color: #262626;
+  margin: auto;
 }
 
 
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (iPhone SE, Pixel 7, Surface Duo, Samsung Galaxy A51/71, Galaxy Z Fold, phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  
   .page {
     background: #bada55;
-    width: 90%;
-    margin: 0 auto
+    max-width: 350px;
+    margin: auto;
+
   }
 
   .grid {
@@ -32,84 +33,115 @@ body {
     grid-template-areas:
       "header"
       "intro"
-      "art-header"
-      "project"
-      "podcast-header"
-      "artfab-header"
-      "nav-block" 
+      "art-projects-header"
+      "art-projects"
+      "podcast-projects-header"
+      "fabrication-projects-header"
+      "nav-block"
       "social-block";
-    row-gap: auto;
-    column-gap: 60px;
   }
-
 }
-/* Small devices (portrait tablets and large phones, 600px and up) */
+
+
+/* Small devices (iPhone SE in landscape, portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .page {
-    background: fuchsia;
-    width: 90%;
-    margin: 0 auto
+    background: darkorange;
+    max-width: 540px;
+    margin: auto;
   }
 
   .grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-      "header header"
-      "intro intro"
-      "art-header art-header"
-      "project project"
-      "project project"
-      "project project"
-      "project project"
-      "podcast-header podcast-header"
-      "artfab-header artfab-header"
-      "nav-block nav-block" 
-      "social-block social-block";
+    "header header"
+    "intro intro"
+    "art-projects-header art-projects-header"
+    "art-projects art-projects"
+    "podcast-projects-header podcast-projects-header"
+    "fabrication-projects-header fabrication-projects-header"
+    "social-block social-block";
     row-gap: auto;
     column-gap: 60px;
   }
 }
-/* Medium devices (landscape tablets, 768px and up) */
+
+
+/* Medium devices (iPad Air, iPad Mini, Surface Pro 7, Asus Zenbook Fold, landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .page {
-    margin: 0 auto;
-    background: lightblue;
+    background: darkolivegreen;
+    max-width: 728px;
+    margin: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "intro intro"
+      "art-projects-header art-projects-header"
+      "art-projects art-projects"
+      "podcast-projects-header podcast-projects-header"
+      "fabrication-projects-header fabrication-projects-header"
+      "nav-block social-block";
+    /* row-gap: auto; */
+    column-gap: 60px;
   }
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (iPad Pro, laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
   .page {
-    width: 1080px;
-    margin: 0 auto;
+    max-width: 960px;
+    margin: auto;
     background: #313030;
   }
-  
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "header header header"
       "intro intro intro"
-      "art-header art-header art-header"
-      /* "art-projects art-projects art-projects" */
-      "podcast-header podcast-header podcast-header"
-      "artfab-header artfab-header artfab-header"
+      "art-projects-header art-projects-header art-projects-header"
+      "art-projects art-projects art-projects"
+      "podcast-projects-header podcast-projects-header podcast-projects-header"
+      "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
       "nav-block social-block social-block";
-
-    row-gap: auto;
+    /* row-gap: auto; */
     column-gap: 60px;
   }
-
 }
+
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+  .page {
+    width: 1080px;
+    margin: 0 auto;
+    background: darkslateblue;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "intro intro intro"
+      "art-projects-header art-projects-header art-projects-header"
+      "art-projects art-projects art-projects"
+      "podcast-projects-header podcast-projects-header podcast-projects-header"
+      "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
+      "nav-block social-block social-block";
+    /* row-gap: auto; */
+    column-gap: 60px;
+  }
 }
 
+/* All devices */
 
 .intro {
   grid-area: intro;
@@ -117,14 +149,13 @@ body {
 
 /* unvisited link */
 a:link {
-  color: #8c36d6;
+  color: fuchsia;
   text-decoration-line: none;
-
 }
 
 /* visited link */
 a:visited {
-  color: #8c36d6;
+  color: fuchsia;
   text-decoration-line: none;
 }
 
@@ -144,7 +175,7 @@ h1 {
 
 h2 {
   color: #f2f2f2;
-  margin-bottom: 10px ;
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -169,11 +200,11 @@ ul {
 }
 
 .navigation a:link {
- text-decoration-line: none;
+  text-decoration-line: none;
 }
 
 .navigation li {
-  list-style: none; 
+  list-style: none;
 }
 
 h1 a:link {
@@ -194,10 +225,10 @@ h1 a:link {
   margin: 0 0 10px 0;
 }
 
-.tag a{
+.tag a {
   /* create the purple hover effect and black padding */
   margin: 0 0 10px 0;
-  font-size: .9em;
+  font-size: 0.9em;
   background-color: black;
   line-height: 2em;
   padding: 4px 6px 4px 6px;
@@ -206,35 +237,38 @@ h1 a:link {
 }
 
 .tag a:hover {
-  background-color: #8c36d6;
+  background-color: fuchsia;
   color: white;
 }
 
-.art-header, .podcast-header, .artfab-header {
+.art-projects-header,
+.podcast-projects-header,
+.fabrication-projects-header {
   background-color: #989898;
 }
 
-.art-header {
-  grid-area: art-header;
+.art-projects-header {
+  grid-area: art-projects-header;
 }
 
-.podcast-header {
-  grid-area: podcast-header;
+.podcast-projects-header {
+  grid-area: podcast-projects-header;
 }
 
-.artfab-header {
-  grid-area: artfab-header;
+.fabrication-projects-header {
+  grid-area: fabrication-projects-header;
 }
 
 .art-projects {
   grid-area: art-projects;
+  background-color: lightskyblue;
 }
 
 .project {
-  background-color: gray;
+  grid-area: project;
+  background-color: darkcyan;
   width: 320px;
   height: 550px;
-  grid-area: project;
 }
 
 .project-thumbnail {
@@ -252,12 +286,12 @@ h1 a:link {
 }
 
 .nav-block {
-    grid-area: nav-block;
+  grid-area: nav-block;
 }
 
 .nav-block ul {
   padding: 0;
-  list-style-type: none; 
+  list-style-type: none;
 }
 
 .social-block {
@@ -266,7 +300,7 @@ h1 a:link {
 
 .social-block ul {
   padding: 0;
-  list-style-type: none; 
+  list-style-type: none;
 }
 
 .social a:link {
@@ -280,5 +314,4 @@ h1 a:link {
 }
 
 .blog-post {
-
 }
