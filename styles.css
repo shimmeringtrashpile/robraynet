@@ -22,7 +22,7 @@ body {
   
   .page {
     background: #bada55;
-    width: 400px;
+    width: 90%;
     margin: 0 auto
   }
 
@@ -47,7 +47,7 @@ body {
 @media only screen and (min-width: 600px) {
   .page {
     background: fuchsia;
-    width: 720px;
+    width: 90%;
     margin: 0 auto
   }
 
@@ -73,15 +73,19 @@ body {
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .page {
-    background: burlywood;
+    margin: 0 auto;
+    background: lightblue;
   }
 }
+
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
   .page {
-    width: 1090px;
-    margin: 0 auto
+    width: 1080px;
+    margin: 0 auto;
+    background: #313030;
   }
   
   .grid {
@@ -91,12 +95,11 @@ body {
       "header header header"
       "intro intro intro"
       "art-header art-header art-header"
-      "project project project"
-      "project project project"
-      "project project project"
+      /* "art-projects art-projects art-projects" */
       "podcast-header podcast-header podcast-header"
       "artfab-header artfab-header artfab-header"
       "nav-block social-block social-block";
+
     row-gap: auto;
     column-gap: 60px;
   }
@@ -207,28 +210,31 @@ h1 a:link {
   color: white;
 }
 
+.art-header, .podcast-header, .artfab-header {
+  background-color: #989898;
+}
+
 .art-header {
   grid-area: art-header;
-  border: 1px solid white;
-  height: auto;
 }
 
 .podcast-header {
   grid-area: podcast-header;
-  border: 1px solid white;
-  justify-content: space-around;
 }
 
 .artfab-header {
   grid-area: artfab-header;
-  border: 1px solid white;
-  justify-content: space-around;
+}
+
+.art-projects {
+  grid-area: art-projects;
 }
 
 .project {
-  border: 1px solid red;
+  background-color: gray;
   width: 320px;
   height: 550px;
+  grid-area: project;
 }
 
 .project-thumbnail {
@@ -236,7 +242,7 @@ h1 a:link {
 }
 
 .project-header {
-  border: 1px solid green;
+  background-color: darkgrey;
   height: 48px;
 }
 
