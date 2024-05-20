@@ -104,19 +104,21 @@ body {
     margin: auto;
   }
 
-  /* .grid {
+  .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "header header"
     "project-title project-title"
     "project-description project-description"
-    "item1 ."
+    "item1 item2"
+    "item3 item4"
+    "item5 ."
     "tag-collection tag-collection"
     "nav-block nav-block"
     "social-block social-block";
     column-gap: 32px;
-  } */
+  }
 
   .item-thumbnail {
     height: 320px;
@@ -242,7 +244,7 @@ h2 {
 
 h3 {
   color: #f2f2f2;
-  margin-block-start: 0;
+  margin-block-start: 16px;
   margin-block-end: 0;
 }
 
@@ -304,9 +306,18 @@ h1 a:link {
 .tag-collection {
   /* create the fuchsia hover effect and black padding */
   grid-area: tag-collection;
-  margin: 0 0 10px 0;
+  margin: 8px 0 16px 0;
   height: auto;
 }
+
+.tag-collection h3 {
+ margin-bottom: 0px;
+}
+
+.tag-collection p {
+margin: 16px 0 4px 0;
+}
+
 
 .tag a {
   /* create the fuchsia hover effect and black padding */
