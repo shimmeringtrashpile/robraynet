@@ -35,6 +35,7 @@ body {
     "project-title"
     "project-description"
     "item1"
+    "item2"
     "tag-collection"
     "nav-block"
     "social-block";
@@ -295,6 +296,7 @@ h1 a:link {
 
 .tag-collection {
   /* create the fuchsia hover effect and black padding */
+  grid-area: tag-collection;
   margin: 0 0 10px 0;
   height: auto;
 }
@@ -319,14 +321,26 @@ h1 a:link {
   grid-area: project-description;
 }
 
+.item{
+  height: auto;
+}
+
 .item1 {
   grid-area: item1;
 }
 
+.item2 {
+  grid-area: item2;
+}
+
 .caption {
-  margin-top: 8px;
+  height: auto;
+}
+
+.caption p {
+  margin: 4px 0px 24px 0px;
   font-size: .80em;
-  color: #bfff7f;
+  color: #848694;
 }
 
 /* Nav & Social Blocks */
