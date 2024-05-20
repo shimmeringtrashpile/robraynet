@@ -55,6 +55,10 @@ body {
     margin-bottom: 8px;
   }
 
+  .vimeo {
+    min-height: 300px;
+  }
+
   .nav-item {
     font-size: .9em;
   }
@@ -94,6 +98,10 @@ body {
     width: 300px;
     height: 370px;
   }
+
+  .vimeo {
+    min-height: 300px;
+  }
 }
 
 
@@ -130,6 +138,10 @@ body {
     width: 320px;
     height: auto;
     margin-bottom: 8px;
+  }
+
+  .vimeo {
+    min-height: 320px;
   }
 
   .nav-item {
@@ -172,6 +184,10 @@ body {
     margin-bottom: 8px;
   }
 
+  .vimeo {
+    min-height: 300px;
+  }
+
 }
 
 
@@ -207,6 +223,10 @@ body {
     width: 300px;
     height: auto;
     margin-bottom: 8px;
+  }
+
+  .vimeo {
+    min-height: 300px;
   }
 
 
@@ -429,6 +449,5 @@ margin: 16px 0 4px 0;
 .vimeo {
   padding:75% 0 0 0;
   position:relative;
-  min-height: 320px;
   background-color: black;
 }
