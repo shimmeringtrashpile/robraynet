@@ -68,28 +68,30 @@ body {
     margin: auto;
   }
 
-  /* .grid {
+  .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "header header"
     "project-title project-title"
     "project-description project-description"
-    "item1 ."
+    "item1 item2"
+    "item3 item4"
+    "item5 ."
     "tag-collection tag-collection"
     "nav-block nav-block"
     "social-block social-block";
     column-gap: 20px;
-  } */
+  }
 
   .item-thumbnail {
     height: 300px;
   }
 
   .item {
-    background-color: darkcyan;
+    /* background-color: darkcyan; */
     width: 300px;
-    height: 540px;
+    height: 370px;
   }
 }
 
@@ -121,7 +123,7 @@ body {
   }
 
   .item {
-    background-color: darkcyan;
+    /* background-color: darkcyan; */
     width: 320px;
     height: 540px;
   }
@@ -158,7 +160,7 @@ body {
   }
 
   .item {
-    background-color: darkcyan;
+    /* background-color: darkcyan; */
     width: 300px;
     height: 540px;
   }
@@ -389,4 +391,6 @@ h1 a:link {
 .vimeo {
   padding:75% 0 0 0;
   position:relative;
+  min-height: 320px;
+  background-color: black;
 }
