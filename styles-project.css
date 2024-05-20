@@ -37,6 +37,8 @@ body {
     "item1"
     "item2"
     "item3"
+    "item4"
+    "item5"
     "tag-collection"
     "nav-block"
     "social-block";
@@ -338,6 +340,14 @@ h1 a:link {
   grid-area: item3;
 }
 
+.item4 {
+  grid-area: item4;
+}
+
+.item5 {
+  grid-area: item5;
+}
+
 .caption {
   height: auto;
 }
@@ -374,4 +384,9 @@ h1 a:link {
 
 .nav-item {
   line-height: 1.4;
+}
+
+.vimeo {
+  padding:75% 0 0 0;
+  position:relative;
 }
