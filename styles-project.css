@@ -13,7 +13,8 @@
 }
 
 body {
-  background-color: #262626;
+  /* background-color: #262626; */
+  background-color: #22232a;
   margin: auto;
 }
 
@@ -21,10 +22,9 @@ body {
 /* Extra small devices (iPhone SE, Pixel 7, Surface Duo, Samsung Galaxy A51/71, Galaxy Z Fold, phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .page {
-    background: #bada55;
+    /* background: #bada55; */
     max-width: 320px;
     margin: auto;
-
   }
 
   .grid {
@@ -32,21 +32,22 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas:
     "header"
-    "project-header"
+    "project-title"
     "project-description"
-    /* ... */
+    "item1"
+    "tag-collection"
     "nav-block"
     "social-block";
   }
 
-  .project-thumbnail {
-    height: 320px;
+  .item-thumbnail {
+    height: 300px;
   }
 
-  .project {
+  .item {
     /* background-color: darkcyan; */
-    width: 320px;
-    height: 560px;
+    width: 300px;
+    height: 370px;
   }
 
   .nav-item {
@@ -63,25 +64,26 @@ body {
     margin: auto;
   }
 
-  .grid {
+  /* .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "header header"
-    "project-header project-header"
-    /* ... */
+    "project-title project-title"
+    "project-description project-description"
+    "item1 ."
+    "tag-collection tag-collection"
     "nav-block nav-block"
     "social-block social-block";
     column-gap: 20px;
-  }
+  } */
 
-  .project-thumbnail {
+  .item-thumbnail {
     height: 300px;
   }
 
-  .project {
-    grid-area: project;
-    /* background-color: darkcyan; */
+  .item {
+    background-color: darkcyan;
     width: 300px;
     height: 540px;
   }
@@ -96,25 +98,26 @@ body {
     margin: auto;
   }
 
-  .grid {
+  /* .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "header header"
-    "project-header project-header"
-    /* ... */
+    "project-title project-title"
+    "project-description project-description"
+    "item1 ."
+    "tag-collection tag-collection"
     "nav-block nav-block"
     "social-block social-block";
     column-gap: 32px;
-  }
+  } */
 
-  .project-thumbnail {
+  .item-thumbnail {
     height: 320px;
   }
 
-  .project {
-    grid-area: project;
-    /* background-color: darkcyan; */
+  .item {
+    background-color: darkcyan;
     width: 320px;
     height: 540px;
   }
@@ -133,27 +136,29 @@ body {
     /* background: darkmagenta; */
   }
 
-  .grid {
+  /* .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     "header header header"
-    "project-header project-header project-header"
-    /* ... */
+    "project-title project-title project-title"
+    "project-description project-description project-description"
+    "item1 . ."
+    "tag-collection tag-collection tag-collection"
     "nav-block social-block social-block"
     column-gap: 29px;
-  }
+  } */
 
-  .project-thumbnail {
+  .item-thumbnail {
     height: 300px;
   }
 
-  .project {
-    grid-area: project;
-    /* background-color: darkcyan; */
+  .item {
+    background-color: darkcyan;
     width: 300px;
-    height: 520px;
+    height: 540px;
   }
+
 }
 
 
@@ -164,28 +169,32 @@ body {
     margin: 0 auto;
     /* background: darkslateblue; */
   }
-  .grid {
+
+  /* .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
     "header header header"
-    "project-header project-header project-header"
-    /* ... */
+    "project-title project-title project-title"
+    "project-description project-description project-description"
+    "item1 . ."
+    "tag-collection tag-collection tag-collection"
     "nav-block social-block social-block"
     row-gap: auto;
     column-gap: 30px;
-  }
+  } */
 
-  .project-thumbnail {
+  .item-thumbnail {
     height: 300px;
   }
 
-  .project {
-    grid-area: project;
-    /* background-color: darkcyan; */
+  .item {
+    background-color: darkcyan;
     width: 300px;
-    height: 550px;
+    height: 540px;
   }
+
+
 }
 
 /* All devices */
@@ -272,13 +281,26 @@ h1 a:link {
   color: gray;
 }
 
+/* Project Styling */
+
+.project-title {
+  grid-area: project-title;
+  color: white;
+  height: auto;
+}
+
+.project-title h2{
+  color: #bfff7f;
+}
+
 .tag-collection {
-  /* create the purple hover effect and black padding */
+  /* create the fuchsia hover effect and black padding */
   margin: 0 0 10px 0;
+  height: auto;
 }
 
 .tag a {
-  /* create the purple hover effect and black padding */
+  /* create the fuchsia hover effect and black padding */
   margin: 0 0 10px 0;
   font-size: 0.9em;
   background-color: black;
@@ -293,38 +315,21 @@ h1 a:link {
   color: white;
 }
 
-.art-projects-header,
-.podcast-projects-header,
-.fabrication-projects-header {
-  /* background-color: #989898; */
-}
-
-.art-projects-header {
-  grid-area: art-projects-header;
-}
-
-.podcast-projects-header {
-  grid-area: podcast-projects-header;
-}
-
-.fabrication-projects-header {
-  grid-area: fabrication-projects-header;
-}
-
 .project-description {
   grid-area: project-description;
-
 }
 
-.project-header {
-  /* background-color: darkgrey; */
-  height: auto;
+.item1 {
+  grid-area: item1;
 }
 
-.project-header a {
-  color: white;
-  text-decoration-line: none;
+.caption {
+  margin-top: 8px;
+  font-size: .80em;
+  color: #bfff7f;
 }
+
+/* Nav & Social Blocks */
 
 .nav-block {
   grid-area: nav-block;
@@ -334,8 +339,6 @@ h1 a:link {
   padding: 0;
   list-style-type: none;
 }
-
-/* Nav & Social Blocks */
 
 .social-block {
   grid-area: social-block;
