@@ -22,7 +22,9 @@ Thumbs.db
 # other
 *.ogg
 *.mp3
+*.mov
 *.mp4
 *.png
+*.jpg
 *.jpeg
 *.psd
