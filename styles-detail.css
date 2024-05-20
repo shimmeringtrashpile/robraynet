@@ -299,6 +299,11 @@ margin: 16px 0 4px 0;
 
 .project-navigation {
   grid-area: project-navigation;
+  margin: 0px 24px;
+}
+
+.project-navigation-button {
+  margin: 0px 16px;
 }
 
 .item-detail {
