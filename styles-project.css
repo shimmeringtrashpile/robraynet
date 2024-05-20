@@ -36,6 +36,7 @@ body {
     "project-description"
     "item1"
     "item2"
+    "item3"
     "tag-collection"
     "nav-block"
     "social-block";
@@ -274,12 +275,12 @@ h1 a:link {
 }
 
 .teaser {
-  color: #989898;
+  color: #848694;
   margin: 4px 0px;
 }
 
 .tagline {
-  color: gray;
+  color: #848694;
 }
 
 /* Project Styling */
@@ -331,6 +332,10 @@ h1 a:link {
 
 .item2 {
   grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
 }
 
 .caption {
