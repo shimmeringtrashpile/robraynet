@@ -4,8 +4,11 @@
 
 # mac hidden files
 .DS_Store
+**/.DS_Store
 
 # ignore OS generated files
+.Spotlight-V100
+.Trashes
 ehthumbs.db
 Thumbs.db
 
