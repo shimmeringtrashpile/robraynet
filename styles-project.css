@@ -125,7 +125,9 @@ body {
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
     grid-template-areas:
     "header header"
     "project-title project-title"
