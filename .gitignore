@@ -2,6 +2,9 @@
 # .gitignore
 #
 
+# vscode hidden files
+.vscode
+
 # mac hidden files
 .DS_Store
 **/.DS_Store
