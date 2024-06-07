@@ -175,6 +175,7 @@ h2 {
 h3 {
   color: #f2f2f2;
   margin-bottom: 4px;
+  font-size: 1.4em;
 }
 
 h4 {
@@ -183,8 +184,9 @@ h4 {
 }
 
 p {
-  color: #f2f2f2;
+  color: rgba(255,255,255,.8);
   line-height: 1.4;
+  font-size: 1.1em;
   margin-top: 0px;
 }
 
@@ -211,7 +213,6 @@ h1 a:link {
 }
 
 .teaser {
-  color: #f2f2f2;
   margin: 4px 0px;
 }
 
@@ -227,10 +228,9 @@ h1 a:link {
 .tag a {
   /* create the purple hover effect and black padding */
   margin: 0 0 10px 0;
-  font-size: 0.9em;
-  background-color: black;
+  background-color: #161616;
   line-height: 2em;
-  padding: 4px 6px 4px 6px;
+  padding: 6px 8px 6px 8px;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -254,6 +254,7 @@ h1 a:link {
 }
 
 .nav-block ul {
+  margin-top: 4px;
   padding: 0;
   list-style-type: none;
 }
@@ -264,6 +265,8 @@ h1 a:link {
 
 .social-block ul {
   padding: 0;
+  margin-top: 4px;
+
   list-style-type: none;
 }
 
@@ -278,5 +281,5 @@ h1 a:link {
 }
 
 .nav-item {
-  line-height: 1.4;
+  line-height: 1.5;
 }
