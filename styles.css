@@ -1,7 +1,9 @@
 :root {
   font-family: Inter, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+  font-feature-settings: "liga" 1, "calt" 1;
+  /* fix for Chrome */
 }
+
 @supports (font-variation-settings: normal) {
   :root {
     font-family: InterVariable, sans-serif;
@@ -31,41 +33,26 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "header"
-    "intro"
-    "art-projects-header"
-    "art-project1"
-    "art-project2"
-    "art-project3" 
-    "art-project4" 
-    "art-project5" 
-    "art-project6"
-    "art-project7"
-    "art-project8"
-    "art-project9"
-    "art-project10" 
-    "art-project11" 
-    "art-project12" 
-    "art-project13"
-    "art-project14"
-    "podcast-projects-header"
-    "podcast-project1"
-    "podcast-project2"
-    "podcast-project3" 
-    "podcast-project4" 
-    "podcast-project5" 
-    "podcast-project6"
-    "podcast-project7"
-    "fabrication-projects-header"
-    "fabrication-project1"
-    "fabrication-project2"
-    "fabrication-project3" 
-    "nav-block"
-    "social-block";
+      "header"
+      "intro"
+      "art-projects-header"
+      "art-project1"
+      "art-project2"
+      "art-project3"
+      "art-project4"
+      "art-project5"
+      "art-project6"
+      "art-project7"
+      "art-project8"
+      "art-project9"
+      "art-project10"
+      "text-content"
+      "nav-block"
+      "social-block";
     /* row-gap: auto; */
     /* column-gap: 20px; */
   }
-  
+
   .project-thumbnail {
     height: 320px;
   }
@@ -95,25 +82,16 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "header header"
-    "intro intro"
-    "art-projects-header art-projects-header"
-    "art-project1 art-project2"
-    "art-project3 art-project4" 
-    "art-project5 art-project6"
-    "art-project7 art-project8"
-    "art-project9 art-project10"
-    "art-project11 art-project12" 
-    "art-project13 art-project14"
-    "podcast-projects-header podcast-projects-header"
-    "podcast-project1 podcast-project2"
-    "podcast-project3 podcast-project4" 
-    "podcast-project5 podcast-project6"
-    "podcast-project7 ."
-    "fabrication-projects-header fabrication-projects-header"
-    "fabrication-project1 fabrication-project2"
-    "fabrication-project3 ."  
-    "nav-block social-block";
+      "header header"
+      "intro intro"
+      "art-projects-header art-projects-header"
+      "art-project1 art-project2"
+      "art-project3 art-project4"
+      "art-project5 art-project6"
+      "art-project7 art-project8"
+      "art-project9 art-project10"
+      "text-content text-content"
+      "nav-block social-block";
     /* row-gap: auto; */
     column-gap: 20px;
   }
@@ -144,25 +122,16 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "header header"
-    "intro intro"
-    "art-projects-header art-projects-header"
-    "art-project1 art-project2"
-    "art-project3 art-project4" 
-    "art-project5 art-project6"
-    "art-project7 art-project8"
-    "art-project9 art-project10"
-    "art-project11 art-project12" 
-    "art-project13 art-project14"
-    "podcast-projects-header podcast-projects-header"
-    "podcast-project1 podcast-project2"
-    "podcast-project3 podcast-project4" 
-    "podcast-project5 podcast-project6"
-    "podcast-project7 ."
-    "fabrication-projects-header fabrication-projects-header"
-    "fabrication-project1 fabrication-project2"
-    "fabrication-project3 ." 
-    "nav-block social-block";
+      "header header"
+      "intro intro"
+      "art-projects-header art-projects-header"
+      "art-project1 art-project2"
+      "art-project3 art-project4"
+      "art-project5 art-project6"
+      "art-project7 art-project8"
+      "art-project9 art-project10"
+      "text-content text-content"
+      "nav-block social-block";
     /* row-gap: auto; */
     column-gap: 32px;
   }
@@ -197,21 +166,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "header header header"
-    "intro intro intro"
-    "art-projects-header art-projects-header art-projects-header"
-    "art-project1 art-project2 art-project3"
-    "art-project4 art-project5 art-project6"
-    "art-project7 art-project8 art-project9"
-    "art-project10 art-project11 art-project12" 
-    "art-project13 art-project14 ."
-    "podcast-projects-header podcast-projects-header podcast-projects-header"
-    "podcast-project1 podcast-project2 podcast-project3"
-    "podcast-project4 podcast-project5 podcast-project6"
-    "podcast-project7 . ."
-    "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
-    "fabrication-project1 fabrication-project2 fabrication-project3" 
-    "nav-block social-block social-block";
+      "header header header"
+      "intro intro intro"
+      "art-projects-header art-projects-header art-projects-header"
+      "art-project1 art-project2 art-project3"
+      "art-project4 art-project5 art-project6"
+      "art-project7 art-project8 art-project9"
+      "art-project10 . ."
+      "text-content text-content text-content"
+      "nav-block social-block social-block";
     /* row-gap: auto; */
     column-gap: 29px;
   }
@@ -237,6 +200,7 @@ body {
     margin: 0 auto;
     /* background: darkslateblue; */
   }
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -247,14 +211,8 @@ body {
       "art-project1 art-project2 art-project3"
       "art-project4 art-project5 art-project6"
       "art-project7 art-project8 art-project9"
-      "art-project10 art-project11 art-project12" 
-      "art-project13 art-project14 ."
-      "podcast-projects-header podcast-projects-header podcast-projects-header"
-      "podcast-project1 podcast-project2 podcast-project3"
-      "podcast-project4 podcast-project5 podcast-project6"
-      "podcast-project7 . ."
-      "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
-      "fabrication-project1 fabrication-project2 fabrication-project3" 
+      "art-project10 . ."
+      "text-content text-content text-content"
       "nav-block social-block social-block";
     row-gap: auto;
     column-gap: 30px;
@@ -319,7 +277,7 @@ h3 {
 }
 
 p {
-  color: rgba(255,255,255,.8);
+  color: rgba(255, 255, 255, .8);
   line-height: 1.4;
   font-size: 1.1em;
 }
@@ -533,9 +491,16 @@ h1 a:link {
   border: 1px solid white;
 }
 
-.blog-post {
-}
+.blog-post {}
 
 .nav-item {
   line-height: 1.5;
+}
+
+.text-content {
+  grid-area: text-content;
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0;
+  padding: 0;
 }
