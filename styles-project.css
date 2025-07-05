@@ -46,6 +46,12 @@ body {
       "item8"
       "item9"
       "item10"
+      "item11"
+      "item12"
+      "item13"
+      "item14"
+      "item15"
+      "item16"
       "text-content"
       "tag-collection"
       "nav-block"
@@ -93,6 +99,9 @@ body {
       "item5 item6"
       "item7 item8"
       "item9 item10"
+      "item11 item12"
+      "item13 item14"
+      "item15 item16"
       "text-content text-content"
       "tag-collection tag-collection"
       "nav-block nav-block"
@@ -138,6 +147,9 @@ body {
       "item5 item6"
       "item7 item8"
       "item9 item10"
+      "item11 item12"
+      "item13 item14"
+      "item15 item16"
       "text-content text-content"
       "tag-collection tag-collection"
       "nav-block nav-block"
@@ -184,7 +196,9 @@ body {
       "item1 item2 item3"
       "item4 item5 item6"
       "item7 item8 item9"
-      "item10 . ."
+      "item10 item11 item12"
+      "item13 item14 item15"
+      "item16 . ."
       "text-content text-content text-content"
       "tag-collection tag-collection tag-collection"
       "nav-block kdzu-block shadow-block";
@@ -227,7 +241,9 @@ body {
       "item1 item2 item3"
       "item4 item5 item6"
       "item7 item8 item9"
-      "item10 . ."
+      "item10 item11 item12"
+      "item13 item14 item15"
+      "item16 . ."
       "text-content text-content text-content"
       "tag-collection tag-collection tag-collection"
       "nav-block kdzu-block shadow-block";
@@ -440,6 +456,34 @@ h1 a:link {
 
 .item9 {
   grid-area: item9;
+}
+
+.item10 {
+  grid-area: item10;
+}
+
+.item11 {
+  grid-area: item11;
+}
+
+.item12 {
+  grid-area: item12;
+}
+
+.item13 {
+  grid-area: item13;
+}
+
+.item14 {
+  grid-area: item14;
+}
+
+.item15 {
+  grid-area: item15;
+}
+
+.item16 {
+  grid-area: item16;
 }
 
 
