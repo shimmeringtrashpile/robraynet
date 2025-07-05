@@ -70,9 +70,7 @@ body {
       "fabrication-project1"
       "fabrication-project2"
       "fabrication-project3"
-      "nav-block"
-      "kdzu-block"
-      "shadow-block";
+      "footer";
     /* row-gap: auto; */
     /* column-gap: 20px; */
   }
@@ -124,8 +122,7 @@ body {
       "fabrication-projects-header fabrication-projects-header"
       "fabrication-project1 fabrication-project2"
       "fabrication-project3 ."
-      "nav-block kdzu-block"
-      "shadow-block shadow-block";
+      "footer footer";
     /* row-gap: auto; */
     column-gap: 20px;
   }
@@ -174,8 +171,7 @@ body {
       "fabrication-projects-header fabrication-projects-header"
       "fabrication-project1 fabrication-project2"
       "fabrication-project3 ."
-      "nav-block kdzu-block"
-      "shadow-block shadow-block";
+      "footer footer";
     /* row-gap: auto; */
     column-gap: 32px;
   }
@@ -224,7 +220,7 @@ body {
       "podcast-project7 . ."
       "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
       "fabrication-project1 fabrication-project2 fabrication-project3"
-      "nav-block kdzu-block shadow-block";
+      "footer footer footer";
     /* row-gap: auto; */
     column-gap: 29px;
   }
@@ -269,7 +265,7 @@ body {
       "podcast-project7 . ."
       "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
       "fabrication-project1 fabrication-project2 fabrication-project3"
-      "nav-block kdzu-block shadow-block";
+      "footer footer footer";
     row-gap: auto;
     column-gap: 30px;
   }
@@ -518,6 +514,32 @@ h1 a:link {
 }
 
 /* Footer section to ensure footer blocks are at bottom */
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Small devices and up - 2 column footer layout */
+@media only screen and (min-width: 600px) {
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "nav-block kdzu-block"
+      "shadow-block shadow-block";
+  }
+}
+
+/* Large devices and up - 3 column footer layout */
+@media only screen and (min-width: 992px) {
+  footer {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "nav-block kdzu-block shadow-block";
+  }
+}
+
 .nav-block,
 .kdzu-block,
 .shadow-block {
