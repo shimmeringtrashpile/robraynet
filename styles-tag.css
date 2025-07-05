@@ -1,0 +1,446 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+  /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #262626;
+  margin: auto;
+}
+
+/* Extra small devices (iPhone SE, Pixel 7, Surface Duo, Samsung Galaxy A51/71, Galaxy Z Fold, phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .page {
+    max-width: 320px;
+    margin: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "art-projects-header"
+      "art-project1"
+      "art-project2"
+      "art-project3"
+      "art-project4"
+      "art-project5"
+      "art-project6"
+      "art-project7"
+      "art-project8"
+      "art-project9"
+      "art-project10"
+      "art-project11"
+      "art-project12"
+      "art-project13"
+      "art-project14"
+      "art-project15"
+      "art-project16"
+      "art-project17"
+      "art-project18"
+      "art-project19"
+      "art-project20"
+      "nav-block"
+      "kdzu-block"
+      "shadow-block";
+  }
+
+  .project-thumbnail {
+    height: 320px;
+  }
+
+  .project {
+    width: 320px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  .nav-item {
+    font-size: .9em;
+  }
+}
+
+/* Small devices (iPhone SE in landscape, portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .page {
+    max-width: 620px;
+    margin: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "art-projects-header art-projects-header"
+      "art-project1 art-project2"
+      "art-project3 art-project4"
+      "art-project5 art-project6"
+      "art-project7 art-project8"
+      "art-project9 art-project10"
+      "art-project11 art-project12"
+      "art-project13 art-project14"
+      "art-project15 art-project16"
+      "art-project17 art-project18"
+      "art-project19 art-project20"
+      "nav-block kdzu-block shadow-block";
+    column-gap: 20px;
+  }
+
+  .project-thumbnail {
+    height: 300px;
+  }
+
+  .project {
+    width: 300px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+}
+
+/* Medium devices (iPad Air, iPad Mini, Surface Pro 7, Asus Zenbook Fold, landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .page {
+    max-width: 672px;
+    margin: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "header header"
+      "art-projects-header art-projects-header"
+      "art-project1 art-project2"
+      "art-project3 art-project4"
+      "art-project5 art-project6"
+      "art-project7 art-project8"
+      "art-project9 art-project10"
+      "art-project11 art-project12"
+      "art-project13 art-project14"
+      "art-project15 art-project16"
+      "art-project17 art-project18"
+      "art-project19 art-project20"
+      "nav-block kdzu-block shadow-block";
+    column-gap: 32px;
+  }
+
+  .project-thumbnail {
+    height: 320px;
+  }
+
+  .project {
+    width: 320px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+
+  .nav-item {
+    font-size: .9em;
+  }
+}
+
+/* Large devices (iPad Pro, laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .page {
+    max-width: 960px;
+    margin: auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "art-projects-header art-projects-header art-projects-header"
+      "art-project1 art-project2 art-project3"
+      "art-project4 art-project5 art-project6"
+      "art-project7 art-project8 art-project9"
+      "art-project10 art-project11 art-project12"
+      "art-project13 art-project14 art-project15"
+      "art-project16 art-project17 art-project18"
+      "art-project19 art-project20 ."
+      "nav-block kdzu-block shadow-block";
+    column-gap: 29px;
+  }
+
+  .project-thumbnail {
+    height: 300px;
+  }
+
+  .project {
+    width: 300px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .page {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "art-projects-header art-projects-header art-projects-header"
+      "art-project1 art-project2 art-project3"
+      "art-project4 art-project5 art-project6"
+      "art-project7 art-project8 art-project9"
+      "art-project10 art-project11 art-project12"
+      "art-project13 art-project14 art-project15"
+      "art-project16 art-project17 art-project18"
+      "art-project19 art-project20 ."
+      "nav-block kdzu-block shadow-block";
+    row-gap: auto;
+    column-gap: 30px;
+  }
+
+  .project-thumbnail {
+    height: 300px;
+  }
+
+  .project {
+    width: 300px;
+    height: auto;
+    margin-bottom: 24px;
+  }
+}
+
+/* All devices */
+
+/* unvisited link */
+a:link {
+  color: fuchsia;
+  text-decoration-line: none;
+}
+
+/* visited link */
+a:visited {
+  color: fuchsia;
+  text-decoration-line: none;
+}
+
+/* mouse over link */
+a:hover {
+  text-decoration-line: underline;
+}
+
+/* selected link */
+a:active {
+  color: #f2f2f2;
+}
+
+h1 {
+  /* color: #f2f2f2; */
+}
+
+h2 {
+  color: #f2f2f2;
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+h3 {
+  color: #f2f2f2;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 1.4em;
+}
+
+p {
+  color: rgba(255, 255, 255, .8);
+  line-height: 1.4;
+  font-size: 1.1em;
+}
+
+ul {
+  color: #f2f2f2;
+  line-height: 1.4;
+}
+
+.header {
+  grid-area: header;
+  margin-top: 30px;
+}
+
+.navigation a:link {
+  text-decoration-line: none;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+h1 a:link {
+  text-decoration-line: none;
+}
+
+.teaser {
+  margin: 4px 0px;
+}
+
+.tagline {
+  color: #848694;
+}
+
+.tag-collection {
+  margin: 8px 0 16px 0;
+}
+
+.tag a {
+  margin: 0 0 10px 0;
+  background-color: #161616;
+  line-height: 2.2em;
+  padding: 6px 8px 6px 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.tag a:hover {
+  background-color: fuchsia;
+  color: white;
+}
+
+.art-projects-header {
+  grid-area: art-projects-header;
+}
+
+.art-project1 {
+  grid-area: art-project1;
+}
+
+.art-project2 {
+  grid-area: art-project2;
+}
+
+.art-project3 {
+  grid-area: art-project3;
+}
+
+.art-project4 {
+  grid-area: art-project4;
+}
+
+.art-project5 {
+  grid-area: art-project5;
+}
+
+.art-project6 {
+  grid-area: art-project6;
+}
+
+.art-project7 {
+  grid-area: art-project7;
+}
+
+.art-project8 {
+  grid-area: art-project8;
+}
+
+.art-project9 {
+  grid-area: art-project9;
+}
+
+.art-project10 {
+  grid-area: art-project10;
+}
+
+.art-project11 {
+  grid-area: art-project11;
+}
+
+.art-project12 {
+  grid-area: art-project12;
+}
+
+.art-project13 {
+  grid-area: art-project13;
+}
+
+.art-project14 {
+  grid-area: art-project14;
+}
+
+.art-project15 {
+  grid-area: art-project15;
+}
+
+.art-project16 {
+  grid-area: art-project16;
+}
+
+.art-project17 {
+  grid-area: art-project17;
+}
+
+.art-project18 {
+  grid-area: art-project18;
+}
+
+.art-project19 {
+  grid-area: art-project19;
+}
+
+.art-project20 {
+  grid-area: art-project20;
+}
+
+.project-header {
+  margin-top: 8px;
+}
+
+.project-header a {
+  color: #bfff7f;
+  text-decoration-line: none;
+}
+
+.nav-block {
+  grid-area: nav-block;
+}
+
+.nav-block ul {
+  margin-top: 4px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-item {
+  line-height: 1.5;
+}
+
+.kdzu-block {
+  grid-area: kdzu-block;
+}
+
+.kdzu-block ul {
+  padding: 0;
+  margin-top: 4px;
+  list-style-type: none;
+}
+
+.shadow-block {
+  grid-area: shadow-block;
+}
+
+.shadow-block ul {
+  padding: 0;
+  margin-top: 4px;
+  list-style-type: none;
+}
