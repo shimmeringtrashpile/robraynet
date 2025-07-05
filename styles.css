@@ -17,8 +17,17 @@
 body {
   background-color: #262626;
   margin: auto;
+  min-height: 100vh;
 }
 
+.page {
+  min-height: 100vh;
+}
+
+.grid {
+  min-height: 100vh;
+  display: grid;
+}
 
 /* Extra small devices (iPhone SE, Pixel 7, Surface Duo, Samsung Galaxy A51/71, Galaxy Z Fold, phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -62,7 +71,8 @@ body {
       "fabrication-project2"
       "fabrication-project3"
       "nav-block"
-      "social-block";
+      "kdzu-block"
+      "shadow-block";
     /* row-gap: auto; */
     /* column-gap: 20px; */
   }
@@ -114,7 +124,8 @@ body {
       "fabrication-projects-header fabrication-projects-header"
       "fabrication-project1 fabrication-project2"
       "fabrication-project3 ."
-      "nav-block kdzu-block shadow-block";
+      "nav-block kdzu-block"
+      "shadow-block shadow-block";
     /* row-gap: auto; */
     column-gap: 20px;
   }
@@ -163,7 +174,8 @@ body {
       "fabrication-projects-header fabrication-projects-header"
       "fabrication-project1 fabrication-project2"
       "fabrication-project3 ."
-      "nav-block kdzu-block shadow-block";
+      "nav-block kdzu-block"
+      "shadow-block shadow-block";
     /* row-gap: auto; */
     column-gap: 32px;
   }
@@ -505,6 +517,13 @@ h1 a:link {
   text-decoration-line: none;
 }
 
+/* Footer section to ensure footer blocks are at bottom */
+.nav-block,
+.kdzu-block,
+.shadow-block {
+  /* Footer blocks will be positioned by grid template areas */
+}
+
 .nav-block {
   grid-area: nav-block;
 }
@@ -514,8 +533,6 @@ h1 a:link {
   padding: 0;
   list-style-type: none;
 }
-
-
 
 .social a:link {
   text-decoration-line: none;
