@@ -1,7 +1,9 @@
 :root {
   font-family: Inter, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+  font-feature-settings: "liga" 1, "calt" 1;
+  /* fix for Chrome */
 }
+
 @supports (font-variation-settings: normal) {
   :root {
     font-family: InterVariable, sans-serif;
@@ -31,13 +33,13 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "header"
-    "project-title"
-    "item-detail"
-    "project-navigation"
-    "tag-collection"
-    "nav-block"
-    "social-block";
+      "header"
+      "project-title"
+      "item-detail"
+      "project-navigation"
+      "tag-collection"
+      "nav-block"
+      "kdzu-block shadow-block";
   }
 
   .vimeo {
@@ -62,13 +64,13 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "header header"
-    "project-title project-title"
-    "item-detail item-detail"
-    "project-navigation project-navigation"
-    "tag-collection tag-collection"
-    "nav-block nav-block"
-    "social-block social-block";
+      "header header"
+      "project-title project-title"
+      "item-detail item-detail"
+      "project-navigation project-navigation"
+      "tag-collection tag-collection"
+      "nav-block nav-block"
+      "kdzu-block shadow-block";
     column-gap: 20px;
   }
 
@@ -90,13 +92,13 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "header header"
-    "project-title project-title"
-    "item-detail item-detail"
-    "project-navigation project-navigation"
-    "tag-collection tag-collection"
-    "nav-block nav-block"
-    "social-block social-block";
+      "header header"
+      "project-title project-title"
+      "item-detail item-detail"
+      "project-navigation project-navigation"
+      "tag-collection tag-collection"
+      "nav-block nav-block"
+      "kdzu-block shadow-block";
     column-gap: 32px;
   }
 
@@ -122,12 +124,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "header header header"
-    "project-title project-title project-title"
-    "item-detail item-detail item-detail"
-    "project-navigation project-navigation project-navigation"
-    "tag-collection tag-collection tag-collection"
-    "nav-block social-block social-block";
+      "header header header"
+      "project-title project-title project-title"
+      "item-detail item-detail item-detail"
+      "project-navigation project-navigation project-navigation"
+      "tag-collection tag-collection tag-collection"
+      "nav-block kdzu-block shadow-block";
     column-gap: 29px;
   }
 
@@ -150,12 +152,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "header header header"
-    "project-title project-title project-title"
-    "item-detail item-detail item-detail"
-    "project-navigation project-navigation project-navigation"
-    "tag-collection tag-collection tag-collection"
-    "nav-block social-block social-block";
+      "header header header"
+      "project-title project-title project-title"
+      "item-detail item-detail item-detail"
+      "project-navigation project-navigation project-navigation"
+      "tag-collection tag-collection tag-collection"
+      "nav-block kdzu-block shadow-block";
     row-gap: auto;
     column-gap: 30px;
   }
@@ -212,7 +214,7 @@ h3 {
 }
 
 p {
-  color: rgba(255,255,255,.8);
+  color: rgba(255, 255, 255, .8);
   line-height: 1.4;
   font-size: 1.1em;
 
@@ -268,10 +270,9 @@ h1 a:link {
   height: auto;
 }
 
-.project-title h2{
+.project-title h2 {
   color: #bfff7f;
   margin-bottom: 10px
-
 }
 
 .tag-collection {
@@ -282,11 +283,11 @@ h1 a:link {
 }
 
 .tag-collection h3 {
- margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .tag-collection p {
-margin: 16px 0 4px 0;
+  margin: 16px 0 4px 0;
 }
 
 
@@ -313,12 +314,11 @@ margin: 16px 0 4px 0;
 
 .project-navigation-button {
   margin: 0px 16px;
-  
+
 }
 
 .project-navigation-button a:active,
-.project-navigation-button a:visited
- {
+.project-navigation-button a:visited {
   text-decoration: none;
   color: fuchsia;
 }
@@ -354,11 +354,23 @@ margin: 16px 0 4px 0;
   list-style-type: none;
 }
 
-.social-block {
-  grid-area: social-block;
+
+
+.kdzu-block {
+  grid-area: kdzu-block;
 }
 
-.social-block ul {
+.kdzu-block ul {
+  padding: 0;
+  margin-top: 4px;
+  list-style-type: none;
+}
+
+.shadow-block {
+  grid-area: shadow-block;
+}
+
+.shadow-block ul {
   padding: 0;
   margin-top: 4px;
   list-style-type: none;
@@ -373,8 +385,8 @@ margin: 16px 0 4px 0;
 }
 
 .vimeo {
-  padding:75% 0 0 0;
-  position:relative;
+  padding: 75% 0 0 0;
+  position: relative;
   background-color: black;
 }
 

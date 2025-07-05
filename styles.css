@@ -114,7 +114,7 @@ body {
       "fabrication-projects-header fabrication-projects-header"
       "fabrication-project1 fabrication-project2"
       "fabrication-project3 ."
-      "nav-block social-block";
+      "nav-block kdzu-block shadow-block";
     /* row-gap: auto; */
     column-gap: 20px;
   }
@@ -163,7 +163,7 @@ body {
       "fabrication-projects-header fabrication-projects-header"
       "fabrication-project1 fabrication-project2"
       "fabrication-project3 ."
-      "nav-block social-block";
+      "nav-block kdzu-block shadow-block";
     /* row-gap: auto; */
     column-gap: 32px;
   }
@@ -212,7 +212,7 @@ body {
       "podcast-project7 . ."
       "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
       "fabrication-project1 fabrication-project2 fabrication-project3"
-      "nav-block social-block social-block";
+      "nav-block kdzu-block shadow-block";
     /* row-gap: auto; */
     column-gap: 29px;
   }
@@ -257,7 +257,7 @@ body {
       "podcast-project7 . ."
       "fabrication-projects-header fabrication-projects-header fabrication-projects-header"
       "fabrication-project1 fabrication-project2 fabrication-project3"
-      "nav-block social-block social-block";
+      "nav-block kdzu-block shadow-block";
     row-gap: auto;
     column-gap: 30px;
   }
@@ -515,15 +515,7 @@ h1 a:link {
   list-style-type: none;
 }
 
-.social-block {
-  grid-area: social-block;
-}
 
-.social-block ul {
-  padding: 0;
-  margin-top: 4px;
-  list-style-type: none;
-}
 
 .social a:link {
   text-decoration-line: none;
@@ -547,4 +539,24 @@ h1 a:link {
   max-width: 100%;
   margin: 2rem 0;
   padding: 0;
+}
+
+.kdzu-block {
+  grid-area: kdzu-block;
+}
+
+.kdzu-block ul {
+  padding: 0;
+  margin-top: 4px;
+  list-style-type: none;
+}
+
+.shadow-block {
+  grid-area: shadow-block;
+}
+
+.shadow-block ul {
+  padding: 0;
+  margin-top: 4px;
+  list-style-type: none;
 }

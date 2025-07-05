@@ -49,7 +49,7 @@ body {
       "text-content"
       "tag-collection"
       "nav-block"
-      "social-block";
+      "kdzu-block shadow-block";
   }
 
   .item-thumbnail {
@@ -96,7 +96,7 @@ body {
       "text-content text-content"
       "tag-collection tag-collection"
       "nav-block nav-block"
-      "social-block social-block";
+      "kdzu-block shadow-block";
     column-gap: 20px;
   }
 
@@ -141,7 +141,7 @@ body {
       "text-content text-content"
       "tag-collection tag-collection"
       "nav-block nav-block"
-      "social-block social-block";
+      "kdzu-block shadow-block";
     column-gap: 32px;
   }
 
@@ -187,7 +187,7 @@ body {
       "item10 . ."
       "text-content text-content text-content"
       "tag-collection tag-collection tag-collection"
-      "nav-block social-block social-block";
+      "nav-block kdzu-block shadow-block";
     column-gap: 29px;
   }
 
@@ -230,7 +230,7 @@ body {
       "item10 . ."
       "text-content text-content text-content"
       "tag-collection tag-collection tag-collection"
-      "nav-block social-block social-block";
+      "nav-block kdzu-block shadow-block";
     row-gap: auto;
     column-gap: 30px;
   }
@@ -465,11 +465,23 @@ h1 a:link {
   list-style-type: none;
 }
 
-.social-block {
-  grid-area: social-block;
+
+
+.kdzu-block {
+  grid-area: kdzu-block;
 }
 
-.social-block ul {
+.kdzu-block ul {
+  padding: 0;
+  margin-top: 4px;
+  list-style-type: none;
+}
+
+.shadow-block {
+  grid-area: shadow-block;
+}
+
+.shadow-block ul {
   padding: 0;
   margin-top: 4px;
   list-style-type: none;

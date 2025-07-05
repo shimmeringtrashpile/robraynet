@@ -1,7 +1,9 @@
 :root {
   font-family: Inter, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1; /* fix for Chrome */
+  font-feature-settings: "liga" 1, "calt" 1;
+  /* fix for Chrome */
 }
+
 @supports (font-variation-settings: normal) {
   :root {
     font-family: InterVariable, sans-serif;
@@ -31,10 +33,10 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-    "header"
-    "privacy-content"
-    "nav-block"
-    "social-block";
+      "header"
+      "privacy-content"
+      "nav-block"
+      "social-block";
     /* row-gap: auto; */
     /* column-gap: 20px; */
   }
@@ -56,10 +58,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "header header"
-    "intro intro"
-    "privacy-content privacy-content"
-    "nav-block social-block";
+      "header header"
+      "intro intro"
+      "privacy-content privacy-content"
+      "nav-block kdzu-block shadow-block";
     /* row-gap: auto; */
     column-gap: 20px;
   }
@@ -78,10 +80,10 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "header header"
-    "intro intro"
-    "privacy-content privacy-content"
-    "nav-block social-block";
+      "header header"
+      "intro intro"
+      "privacy-content privacy-content"
+      "nav-block kdzu-block shadow-block";
     /* row-gap: auto; */
     column-gap: 32px;
   }
@@ -104,9 +106,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    "header header header"
-    "privacy-content privacy-content privacy-content"
-    "nav-block social-block social-block";
+      "header header header"
+      "privacy-content privacy-content privacy-content"
+      "nav-block kdzu-block shadow-block";
     /* row-gap: auto; */
     column-gap: 29px;
   }
@@ -120,6 +122,7 @@ body {
     margin: 0 auto;
     /* background: darkslateblue; */
   }
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -127,7 +130,7 @@ body {
       "header header header"
       "intro intro intro"
       "privacy-content privacy-content privacy-content"
-      "nav-block social-block social-block";
+      "nav-block kdzu-block shadow-block";
     row-gap: auto;
     column-gap: 30px;
   }
@@ -184,7 +187,7 @@ h4 {
 }
 
 p {
-  color: rgba(255,255,255,.8);
+  color: rgba(255, 255, 255, .8);
   line-height: 1.4;
   font-size: 1.1em;
   margin-top: 0px;
@@ -241,11 +244,11 @@ h1 a:link {
 }
 
 
-.privacy-title{
+.privacy-title {
   grid-area: privacy-title;
 }
 
-.privacy-content{
+.privacy-content {
   grid-area: privacy-content;
 }
 
@@ -259,14 +262,25 @@ h1 a:link {
   list-style-type: none;
 }
 
-.social-block {
-  grid-area: social-block;
+
+
+.kdzu-block {
+  grid-area: kdzu-block;
 }
 
-.social-block ul {
+.kdzu-block ul {
   padding: 0;
   margin-top: 4px;
+  list-style-type: none;
+}
 
+.shadow-block {
+  grid-area: shadow-block;
+}
+
+.shadow-block ul {
+  padding: 0;
+  margin-top: 4px;
   list-style-type: none;
 }
 

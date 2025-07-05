@@ -1,31 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css" />
+#!/usr/bin/env python3
+import glob
+import os
 
-  <link rel="shortcut icon" href="images/transistor.png" type="image/png">
-  <title>Rob Ray - Augmented Reality Projects</title>
-</head>
-<body>
-
-  <div class="page grid">
-    <div class="header">
-      <h1>
-        <a href="index.html"
-          >Rob Ray <span class="tagline">feral art and technology</span></a
-        >
-      </h1>
-    </div>
-
-    <div class="art-projects-header">
-      <h2>Augmented Reality Projects</h2>
-    </div>
-
-
-  
-      <div class="nav-block">
+FOOTER = '''      <div class="nav-block">
         <h3>Navigation</h3>
         <ul>
           <li class="nav-item"><a href="index.html">Home</a></li>
@@ -73,7 +50,24 @@
             >
           </li>
         </ul>
-      </div>
+      </div>\n'''
 
-</body>
-</html>
+def needs_footer(content):
+    return ("nav-block" not in content) and ("kdzu-block" not in content) and ("shadow-block" not in content)
+
+def main():
+    html_files = glob.glob("*.html") + glob.glob("*/*.html")
+    updated = 0
+    for path in html_files:
+        with open(path, encoding="utf-8") as f:
+            content = f.read()
+        if needs_footer(content):
+            new_content = content.replace("</body>", f"{FOOTER}\n</body>")
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(new_content)
+            print(f"Added footer to: {path}")
+            updated += 1
+    print(f"\nAdded footer to {updated} files.")
+
+if __name__ == "__main__":
+    main() 
