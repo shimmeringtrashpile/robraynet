@@ -20,6 +20,17 @@ body {
   margin: auto;
 }
 
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  flex: 1;
+  display: grid;
+}
+
 
 /* Extra small devices (iPhone SE, Pixel 7, Surface Duo, Samsung Galaxy A51/71, Galaxy Z Fold, phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -53,8 +64,7 @@ body {
       "item15"
       "item16"
       "text-content"
-      "tag-collection"
-      "footer";
+      "tag-collection";
   }
 
   .item-thumbnail {
@@ -102,8 +112,7 @@ body {
       "item13 item14"
       "item15 item16"
       "text-content text-content"
-      "tag-collection tag-collection"
-      "footer footer";
+      "tag-collection tag-collection";
     column-gap: 20px;
   }
 
@@ -149,8 +158,7 @@ body {
       "item13 item14"
       "item15 item16"
       "text-content text-content"
-      "tag-collection tag-collection"
-      "footer footer";
+      "tag-collection tag-collection";
     column-gap: 32px;
   }
 
@@ -195,8 +203,7 @@ body {
       "item7 item8 item9"
       "item10 . ."
       "text-content text-content text-content"
-      "tag-collection tag-collection tag-collection"
-      "footer footer footer";
+      "tag-collection tag-collection tag-collection";
     column-gap: 29px;
   }
 
@@ -240,8 +247,7 @@ body {
       "item13 item14 item15"
       "item16 . ."
       "text-content text-content text-content"
-      "tag-collection tag-collection tag-collection"
-      "footer footer footer";
+      "tag-collection tag-collection tag-collection";
     row-gap: auto;
     column-gap: 30px;
   }
@@ -550,11 +556,13 @@ h1 a:link {
 
 /* Footer section */
 footer {
-  grid-area: footer;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   margin-top: 40px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (min-width: 600px) {
@@ -563,6 +571,7 @@ footer {
     grid-template-areas:
       "nav-block kdzu-block"
       "shadow-block shadow-block";
+    max-width: 620px;
   }
 }
 
@@ -570,5 +579,6 @@ footer {
   footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "nav-block kdzu-block shadow-block";
+    max-width: 960px;
   }
 }

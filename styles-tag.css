@@ -19,6 +19,17 @@ body {
   margin: auto;
 }
 
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  flex: 1;
+  display: grid;
+}
+
 /* Extra small devices (iPhone SE, Pixel 7, Surface Duo, Samsung Galaxy A51/71, Galaxy Z Fold, phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .page {
@@ -31,8 +42,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-areas:
       "header"
-      "tag-title"
-      "tag-description"
+      "art-projects-header"
       "art-project1"
       "art-project2"
       "art-project3"
@@ -52,8 +62,7 @@ body {
       "art-project17"
       "art-project18"
       "art-project19"
-      "art-project20"
-      "footer";
+      "art-project20";
   }
 
   .project-thumbnail {
@@ -83,8 +92,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "header header"
-      "tag-title tag-title"
-      "tag-description tag-description"
+      "art-projects-header art-projects-header"
       "art-project1 art-project2"
       "art-project3 art-project4"
       "art-project5 art-project6"
@@ -94,8 +102,7 @@ body {
       "art-project13 art-project14"
       "art-project15 art-project16"
       "art-project17 art-project18"
-      "art-project19 art-project20"
-      "footer footer";
+      "art-project19 art-project20";
     column-gap: 20px;
   }
 
@@ -122,8 +129,7 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "header header"
-      "tag-title tag-title"
-      "tag-description tag-description"
+      "art-projects-header art-projects-header"
       "art-project1 art-project2"
       "art-project3 art-project4"
       "art-project5 art-project6"
@@ -133,8 +139,7 @@ body {
       "art-project13 art-project14"
       "art-project15 art-project16"
       "art-project17 art-project18"
-      "art-project19 art-project20"
-      "footer footer";
+      "art-project19 art-project20";
     column-gap: 32px;
   }
 
@@ -165,16 +170,14 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "header header header"
-      "tag-title tag-title tag-title"
-      "tag-description tag-description tag-description"
+      "art-projects-header art-projects-header art-projects-header"
       "art-project1 art-project2 art-project3"
       "art-project4 art-project5 art-project6"
       "art-project7 art-project8 art-project9"
       "art-project10 art-project11 art-project12"
       "art-project13 art-project14 art-project15"
       "art-project16 art-project17 art-project18"
-      "art-project19 art-project20 ."
-      "footer footer footer";
+      "art-project19 art-project20 .";
     column-gap: 29px;
   }
 
@@ -201,16 +204,14 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "header header header"
-      "tag-title tag-title tag-title"
-      "tag-description tag-description tag-description"
+      "art-projects-header art-projects-header art-projects-header"
       "art-project1 art-project2 art-project3"
       "art-project4 art-project5 art-project6"
       "art-project7 art-project8 art-project9"
       "art-project10 art-project11 art-project12"
       "art-project13 art-project14 art-project15"
       "art-project16 art-project17 art-project18"
-      "art-project19 art-project20 ."
-      "footer footer footer";
+      "art-project19 art-project20 .";
     row-gap: auto;
     column-gap: 30px;
   }
@@ -324,6 +325,8 @@ h1 a:link {
 .art-projects-header {
   grid-area: art-projects-header;
 }
+
+
 
 .art-project1 {
   grid-area: art-project1;
@@ -448,13 +451,15 @@ h1 a:link {
   list-style-type: none;
 }
 
-/* Footer section */
+/* Footer section positioned outside the grid */
 footer {
-  grid-area: footer;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
   margin-top: 40px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (min-width: 600px) {
@@ -463,6 +468,7 @@ footer {
     grid-template-areas:
       "nav-block kdzu-block"
       "shadow-block shadow-block";
+    max-width: 620px;
   }
 }
 
@@ -470,5 +476,6 @@ footer {
   footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "nav-block kdzu-block shadow-block";
+    max-width: 960px;
   }
 }
