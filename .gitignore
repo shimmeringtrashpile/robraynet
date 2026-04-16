@@ -26,6 +26,11 @@ Thumbs.db
 *.tar
 *.zip
 
+# Astro
+node_modules
+dist
+.astro
+
 # other
 *.ogg
 *.mp3

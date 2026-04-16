@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import body from "../page-html/strange-sounds-in-strange-places-detail-5.html?raw";
+
+const title = "Rob Ray - Strange Sounds in Strange Places";
+const stylesheets = ["/styles-detail.css"];
+---
+
+<BaseLayout title={title} stylesheets={stylesheets}>
+  <Fragment set:html={body} />
+</BaseLayout>

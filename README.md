@@ -67,12 +67,9 @@ robraynet/
 
 ## Deployment
 
-### Prerequisites
+The site is built with **Astro** and deployed as the contents of **`dist/`** to the **robray-net** R2 bucket. Step-by-step instructions (Node version, `mc` alias, build, and `mc mirror`) are in **[DEPLOYMENT.md](./DEPLOYMENT.md)**.
 
-- MinIO Client (mc) installed and configured
-- Access to Cloudflare R2 bucket
-
-### Deployment Steps
+### Older notes (pre-Astro)
 
 1. **Configure MinIO Client** (if not already done)
    ```bash

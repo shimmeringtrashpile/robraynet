@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import body from "../page-html/subject-to-greater-uncertainties-detail-3.html?raw";
+
+const title = "Rob Ray - Subject to Greater Uncertainties";
+const stylesheets = ["/styles-detail.css"];
+---
+
+<BaseLayout title={title} stylesheets={stylesheets}>
+  <Fragment set:html={body} />
+</BaseLayout>

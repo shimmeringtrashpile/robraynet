@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import body from "../page-html/lo-fi-looping.html?raw";
+
+const title = "Rob Ray - Lo-Fi Looping";
+const stylesheets = ["/styles-detail.css"];
+---
+
+<BaseLayout title={title} stylesheets={stylesheets}>
+  <Fragment set:html={body} />
+</BaseLayout>

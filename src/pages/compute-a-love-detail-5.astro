@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import body from "../page-html/compute-a-love-detail-5.html?raw";
+
+const title = "Rob Ray - COMPUTE-A-LOVE";
+const stylesheets = ["/styles-detail.css"];
+---
+
+<BaseLayout title={title} stylesheets={stylesheets}>
+  <Fragment set:html={body} />
+</BaseLayout>

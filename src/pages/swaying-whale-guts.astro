@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import body from "../page-html/swaying-whale-guts.html?raw";
+
+const title = "Rob Ray - Swaying Whale Guts";
+const stylesheets = ["/styles-project.css"];
+---
+
+<BaseLayout title={title} stylesheets={stylesheets}>
+  <Fragment set:html={body} />
+</BaseLayout>

@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import body from "../page-html/cortex-activities-for-codex-activities-detail-2.html?raw";
+
+const title = "Rob Ray - Cortex Activities for Codex Activities";
+const stylesheets = ["/styles-detail.css"];
+---
+
+<BaseLayout title={title} stylesheets={stylesheets}>
+  <Fragment set:html={body} />
+</BaseLayout>

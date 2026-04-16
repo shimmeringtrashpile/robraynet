@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+  stylesheets?: string[];
+}
+
+const { title, stylesheets = ["/styles.css"] } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    {stylesheets.map((href) => <link rel="stylesheet" href={href} />)}
+    <link rel="shortcut icon" href="/images/transistor.png" type="image/png" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

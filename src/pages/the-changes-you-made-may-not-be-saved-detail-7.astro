@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import body from "../page-html/the-changes-you-made-may-not-be-saved-detail-7.html?raw";
+
+const title = "Rob Ray - The Changes You Made May Not Be Saved";
+const stylesheets = ["/styles-detail.css"];
+---
+
+<BaseLayout title={title} stylesheets={stylesheets}>
+  <Fragment set:html={body} />
+</BaseLayout>

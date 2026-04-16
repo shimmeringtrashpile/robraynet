@@ -1,0 +1,21 @@
+{
+  "name": "robraynet",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "prebuild": "node scripts/ensure-public-assets.mjs",
+    "build": "astro build",
+    "postbuild": "node scripts/write-legacy-html-redirects.mjs",
+    "dev": "astro dev",
+    "preview": "astro preview",
+    "generate": "node scripts/generate-from-html.mjs"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.6.0",
+    "astro": "^6.1.0"
+  }
+}
